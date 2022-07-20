@@ -2,6 +2,13 @@
 name = "create-idea-module"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+keywords = ["intellij"]
+categories = ["command-line-utilities"]
+description = "Creates a new IntelliJ IDEA module by writing a simple IntelliJ IDEA module file."
+documentation = "https://github.com/nullren/create-idea-module"
+homepage = "https://github.com/nullren/create-idea-module"
+repository = "https://github.com/nullren/create-idea-module"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
