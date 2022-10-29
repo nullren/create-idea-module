@@ -34,6 +34,9 @@ fn main() {
         },
         ModuleLanguage::Go => {
             contents = GoModule {}.render().unwrap();
+        },
+        ModuleLanguage::Web => {
+            contents = WebModule {}.render().unwrap();
         }
     }
     fs::write(path, contents).unwrap();
@@ -52,6 +55,10 @@ struct RustModule {}
 #[derive(Template)]
 #[template(path = "go-module.iml", escape = "none")]
 struct GoModule {}
+
+#[derive(Template)]
+#[template(path = "web-module.iml", escape = "none")]
+struct WebModule {}
 
 #[derive(Template)]
 #[template(path = "modules.xml", escape = "none")]

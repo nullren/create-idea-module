@@ -18,4 +18,5 @@ pub struct Config {
 pub enum ModuleLanguage {
     Go,
     Rust,
+    Web,
 }
